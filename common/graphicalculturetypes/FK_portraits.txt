@@ -1,0 +1,78 @@
+barbgfx = {
+	skin_tone = 0
+}
+goblingfx = {
+	skin_tone = 0
+}
+blackknightgfx = {
+	skin_tone = 0
+}
+babdaddgfx = {
+	skin_tone = 0
+}
+guardiangfx = {
+	skin_tone = 0
+}
+huntergfx = {
+	skin_tone = 0
+}
+undeadgfx = {
+	skin_tone = 0
+}
+seyruungfx = {
+	skin_tone = 0
+}
+ogregfx = {
+	skin_tone = 0
+}
+beastmangfx = {
+	skin_tone = 0
+}
+demongfx = {
+	skin_tone = 0
+}
+dwarfgfx = {
+	skin_tone = 0
+}
+woodelfgfx = {
+	skin_tone = 0
+}
+highelfgfx = {
+	skin_tone = 0
+}
+darkelfgfx = {
+	skin_tone = 0
+}
+amazongfx = {
+	skin_tone = 0
+}
+empiregfx = {
+	skin_tone = 0
+}
+nippongfx = {
+	skin_tone = 0
+}
+skyraidergfx = {
+	skin_tone = 0
+}
+nagagfx = {
+	skin_tone = 0
+}
+koboldgfx = {
+	skin_tone = 0
+}
+lizardmangfx = {
+	skin_tone = 0
+}
+orcgfx = {
+	skin_tone = 0
+}
+spriggangfx = {
+	skin_tone = 0
+}
+vampiregfx = {
+	skin_tone = 0
+}
+mummygfx = {
+	skin_tone = 0
+}

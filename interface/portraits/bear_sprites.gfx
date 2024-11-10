@@ -1,0 +1,49 @@
+# hair, mouth, chin, nose, eyes, cheek, ear, neck
+spriteTypes = {
+	spriteType = {
+		name = "GFX_bear_male_cheeks"
+		texturefile = "gfx\\characters\\bear\\bear_male_base.dds"
+		noOfFrames = 8
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_bear_female_cheeks"
+		texturefile = "gfx\\characters\\bear\\bear_female_base.dds"
+		noOfFrames = 8
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	
+	spriteType = {
+		name = "GFX_bear_male_nose"
+		texturefile = "gfx\\characters\\bear\\bear_male_cloth.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_bear_female_nose"
+		texturefile = "gfx\\characters\\bear\\bear_female_cloth.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	# children
+	spriteType = {
+		name = "PORTRAIT_beargfx_child_male"
+		texturefile = "gfx\\characters\\default_son_bear.tga"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	
+	spriteType = {
+		name = "PORTRAIT_beargfx_child_female"
+		texturefile = "gfx\\characters\\default_daughter_bear.tga"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+}

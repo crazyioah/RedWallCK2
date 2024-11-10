@@ -1,0 +1,209 @@
+redwall_rel_group = {
+	has_coa_on_barony_only = no
+	graphical_culture = indiangfx
+	playable = yes
+	hostile_within_group = yes
+	
+	ai_convert_same_group = 1 # try to convert if ai_zeal is high
+	ai_convert_other_group = 2	# always try to convert
+	
+	color = { 0.8 0.4 0.0 }
+	
+	interface_skin = { indian_interface muslim_interface }
+	
+	# Names given only to Indian characters (base names)
+	male_names = {
+	}
+	female_names = {
+	}
+	
+	feline = {
+		graphical_culture = muslimgfx
+
+		icon = 48
+		heresy_icon = 50
+		
+		color = { 0.9 1.0 0.0 }
+		
+		high_god_name = GOD_VULPUZ
+		
+		god_names = {
+			GOD_VULPUZ GOD_THE_FELINES
+		}
+		
+		evil_god_names = {
+			GOD_VULPUZ GOD_MARTIN
+		}
+
+		priests_can_marry = yes
+		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
+		max_wives = 1
+		matrilineal_marriages = yes
+		
+		landed_kin_prestige_bonus = yes
+		attacking_same_religion_piety_loss = yes
+		uses_decadence = no
+		uses_jizya_tax = no
+		
+		unit_modifier = {
+			land_morale = 0.3
+
+			key = "OFF_RELIGION"
+		}
+		
+		religious_clothing_head = 8
+		religious_clothing_priest = 8
+
+		scripture_name = THE_MAHABHARATA
+		priest_title = SQUIRE
+		piety_name = PIETY
+		
+	}
+	vulpuz = {
+		graphical_culture = norsegfx
+		alternate_start = {
+			OR = {
+				year < 1100
+				has_alternate_start_parameter = { key = religion value = full_random }
+			}
+		}
+
+		icon = 22
+		heresy_icon = 24
+		
+		color = { 0.6 0.2 0.1 }
+		
+		high_god_name = GOD_VULPUZ
+		
+		god_names = {
+			GOD_VULPUZ GOD_DARK_FOREST
+		}
+		
+		evil_god_names = {
+			GOD_VULPUZ GOD_MARTIN
+		}
+		
+		character_modifier = {
+			learning = 4
+		}
+
+		priest_title = PRIEST
+		priests_can_marry = yes
+		female_temple_holders = yes
+		max_consorts = 3
+		
+		defensive_attrition = yes
+		
+		priest_title = SEER
+		piety_name = RESPECT
+		
+		priests_can_marry = yes
+		allow_looting = yes
+		allow_rivermovement = yes
+		female_temple_holders = yes
+		defensive_attrition = yes
+		peace_prestige_loss = yes # Lose Prestige while at peace
+		allow_viking_invasion = yes
+		seafarer = yes
+		raised_vassal_opinion_loss = no
+		max_consorts = 3
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		
+		aggression = 2.0 # AI aggression factor
+		
+		short_reign_opinion_year_mult = 2.5
+		
+		religious_clothing_head = 15
+		religious_clothing_priest = 3
+		
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+	}
+	dark_forest = {
+		graphical_culture = jaingfx
+		secondary_event_pictures = sunni
+		
+		pacifist = yes # Makes the AI less likely to start wars, plots and factions
+
+		icon = 37
+		heresy_icon = 14
+		
+		color = { 0.6 0.2 0.1 }
+		
+		high_god_name = GOD_DARK_FOREST
+		
+		god_names = {
+			GOD_MARTIN GOD_SAINT_NINNION GOD_DARK_FOREST GOD_FATE 
+		}
+		
+		evil_god_names = {
+			GOD_VULPUZ
+		}
+
+		has_heir_designation = yes
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		peace_piety_gain = 1.0 # Gains 1 piety each month while at peace
+		castes = no
+
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+		
+		religious_clothing_head = 9
+		religious_clothing_priest = 9
+
+		scripture_name = TAPASTRY_MARTIN
+		priest_title = FATHER_DARK_FOREST
+		piety_name = FAVOUR
+
+		intermarry = dark_forest
+		intermarry = old_ways
+	}
+	old_ways = {
+		graphical_culture = hindugfx
+		secondary_event_pictures = sunni
+		has_coa_on_barony_only = yes
+
+		icon = 25
+		heresy_icon = 27
+		
+		color = { 0.5 0.5 0.0 }
+		
+		interface_skin = { taoist_interface indian_interface muslim_interface }
+		
+		high_god_name = GOD_DARK_FOREST
+		
+		god_names = {
+			GOD_DARK_FOREST GOD_FATE
+		}
+		
+		evil_god_names = {
+			GOD_VULPUZ
+		}
+
+		character_modifier = {
+			stewardship = 2
+		}
+
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		priests_can_marry = yes
+		allow_looting = yes
+		castes = no
+		
+		unit_modifier = {
+			land_morale = 0.3
+
+			key = "OFF_RELIGION"
+		}
+		
+		religious_clothing_head = 8
+		religious_clothing_priest = 8
+
+		scripture_name = THE_MAHABHARATA
+		priest_title = MYSTIC
+		piety_name = SPIRIT
+		
+		intermarry = old_ways
+		intermarry = dark_forest
+	}
+}

@@ -1,7 +1,7 @@
 @echo OFF
 
 ::Constants
-set ck_mod_folder=%homepath%\Docume~1\Parado~1\Crusad~1\mod\
+set ck_mod_folder=%homepath%\Documents\Paradox Interactive\Crusader Kings II\mod\
 set mod_name=RedWallCK2
 set modfiles_folder=.\mod_files\
 
@@ -28,15 +28,15 @@ set moddir_dest=%ck_mod_folder%%moddir_name%
 ::echo.
 
 ::Delete any existing files related to this mod
-if exist %modfile_dest% ( del /F /Q %modfile_dest% )
-if exist %moddir_dest% (
-	del /F /S /Q %moddir_dest%
-	rmdir /S /Q %moddir_dest%
+if exist "%modfile_dest%" ( del /F /Q "%modfile_dest%" )
+if exist "%moddir_dest%" (
+	del /F /S /Q "%moddir_dest%"
+	rmdir /S /Q "%moddir_dest%"
 )
 
 ::Copy the relevant files for this mod to the CK2 mod folder
-xcopy /R /Y /Q %modfile_source% %modfile_dest_folder%
-xcopy /R /Y /Q /S /E /I %moddir_source%* %moddir_dest%
+xcopy /R /Y /Q "%modfile_source%" "%modfile_dest_folder%"
+xcopy /R /Y /Q /S /E /I "%moddir_source%*" "%moddir_dest%"
 
 ::Pause, so that the user can see if there were any errors
 ::pause

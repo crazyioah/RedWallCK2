@@ -1,0 +1,14 @@
+
+
+technology = {
+	titles = {
+		d_terramort
+	}
+
+	1066 = {
+        military = 1.5
+        economy = 1
+        culture = 1
+        TECH_NAVAL = 2.5
+    }
+}

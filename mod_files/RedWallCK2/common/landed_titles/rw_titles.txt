@@ -1,3 +1,5 @@
+# Religious Titles
+
 k_sea_rat = {
 	color={ 255 249 198 }
 	color2={ 220 220 0 }
@@ -106,5 +108,60 @@ k_great_cat = {
 		Alexander Anastasius Benedictus Caelestinus Callistus Clemens Eugenius Leo
 		Gregorius Hadrianus Honorius Innocentius Ioannes Lucius Marinus Martinus
 		Nicolaus Sergius Silvester Stephanus Urbanus Victor
+	}
+}
+
+# Landed Titles
+
+k_terramort = {
+	color = { 100 50 25 }
+	color2 = { 0 0 0 }
+
+	capital = 1 # Fort Bladegirt
+
+	d_terramort = {
+		color = { 175 90 45 }
+		color2 = { 0 0 0 }
+
+		capital = 1 # Fort Bladegirt
+
+		c_bladegirt = {
+			color = { 175 100 40 }
+			color2 = { 0 0 0 }
+
+			b_fort_bladegirt = {}
+			b_bladegirt_town = {}
+			b_sea_rat_temple = {}
+			b_ui_gabool = {}
+			b_wilde = {}
+			b_banquetta = {}
+			b_highhill = {}
+		}
+
+		c_terramort = {
+			color = { 170 90 45 }
+			color2 = { 0 0 0 }
+
+			b_terramort = {}
+			b_earths_end = {}
+			b_westend = {}
+			b_forskir = {}
+			b_isles_town = {}
+			b_seburg = {}
+			b_lowhol = {}
+		}
+
+		c_serat = {
+			color = { 160 90 30 }
+			color2 = { 0 0 0 }
+
+			b_serat = {}
+			b_fishertown = {}
+			b_long_isle = {}
+			b_highfest = {}
+			b_gellwe = {}
+			b_ratville = {}
+			b_swimshore = {}
+		}
 	}
 }

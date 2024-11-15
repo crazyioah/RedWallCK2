@@ -1,9 +1,48 @@
 @echo OFF
 
-::Constants
-set ck_mod_folder=%homepath%\Documents\Paradox Interactive\Crusader Kings II\mod\
+::Constants - Mod Name
 set mod_name=RedWallCK2
+
+::Constants - Mod structure inside git repo
 set modfiles_folder=.\mod_files\
+
+::Constants - Documents folder location
+::          - Check which one exists, and use that one. If both or neither exist, throw an error.
+set ck_mod_folder_onedrive=%homepath%\OneDrive\Documents\Paradox Interactive\Crusader Kings II\mod\
+set ck_mod_folder_normal=%homepath%\Documents\Paradox Interactive\Crusader Kings II\mod\
+if exist "%ck_mod_folder_normal%" (
+	if exist "%ck_mod_folder_onedrive%" (
+		echo ERROR! Unable to locate CK2 mod folder!
+		echo.
+		echo ***BOTH*** of the likely folders exist, so it's not clear which one should be used:
+		echo      Windows Default: %ck_mod_folder_normal%
+		echo      OneDrive:        %ck_mod_folder_onedrive%
+		echo.
+		echo Please contact an admin for further assistance with this issue.
+		echo.
+		echo This process will now exit.
+		pause
+		exit
+	) else (
+		set ck_mod_folder=%ck_mod_folder_normal%
+	)
+) else (
+	if exist "%ck_mod_folder_onedrive%" (
+		set ck_mod_folder=%ck_mod_folder_onedrive%
+	) else (
+		echo ERROR! Unable to locate CK2 mod folder!
+		echo.
+		echo ***NEITHER*** of the likely folders exist:
+		echo      Windows Default: %ck_mod_folder_normal%
+		echo      OneDrive:        %ck_mod_folder_onedrive%
+		echo.
+		echo Please contact an admin for further assistance with this issue.
+		echo.
+		echo This process will now exit.
+		pause
+		exit
+	)
+)
 
 ::Set locations of files
 set modfile_name=%mod_name%.mod

@@ -5,8 +5,6 @@ set mod_name=RedWallCK2
 
 ::Constants - Mod structure inside git repo
 set modfiles_folder=.\mod_files\
-
-::Constants - Other
 set zip_loc=.\_utilities\7z_CmdLine\7z.exe
 
 ::Set locations of files

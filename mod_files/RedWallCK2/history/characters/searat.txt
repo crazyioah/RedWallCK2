@@ -1,0 +1,8 @@
+1000000000 = {
+    name = "Testcharacter"
+    dynasty = 1
+    culture = horse
+    religion = catholic
+    1040.1.1 = { birth = yes } # Current bookmark is 1066?
+    1080.1.1 = { death = yes } 
+}

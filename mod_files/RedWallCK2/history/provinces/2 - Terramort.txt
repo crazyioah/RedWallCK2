@@ -1,0 +1,14 @@
+title = c_terramort
+
+max_settlements = 5
+
+culture = horse
+religion = catholic
+
+b_terramort = castle
+b_earths_end = temple
+b_westend = city
+#b_forskir = castle
+b_isles_town = city
+#b_seburg = castle
+#b_lowhol = castle

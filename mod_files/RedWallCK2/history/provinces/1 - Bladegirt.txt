@@ -1,0 +1,14 @@
+title = c_bladegirt
+
+max_settlements = 3
+
+culture = horse
+religion = catholic
+
+b_fort_bladegirt = castle
+#b_bladegirt_town = city
+b_sea_rat_temple = temple
+#b_ui_gabool = castle
+#b_wilde = castle
+#b_banquetta = castle
+#b_highhill = castle

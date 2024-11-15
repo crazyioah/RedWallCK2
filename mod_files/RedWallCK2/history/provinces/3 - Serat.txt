@@ -1,0 +1,15 @@
+title = c_serat
+
+max_settlements = 3
+
+culture = horse
+religion = catholic
+
+
+b_serat = castle
+#b_fishertown = city
+b_long_isle = temple
+#b_highfest = castle
+#b_gellwe = castle
+#b_ratville = castle
+#b_swimshore = castle

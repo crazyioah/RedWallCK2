@@ -1,0 +1,56 @@
+
+============================
+High-level project direction
+============================
+
+ - Is it worthwhile to use CleanSlate as a basis, instead of the base game?
+    - In theory, using CleanSlate will make it easier to replace/remove specific items.
+    - But you will probably have to designate CleanSlate as a required dependency, which will complicate setup.
+ - Decide on a start date
+ - Decide what religions will exist, and in general terms what they will do
+ - Are there any event chains / decisions / etc which would add flavour for this start date?
+    - Formation of the abbey?
+ - Decide on an approach to Great Works:
+    - Can players construct them? If so, which?
+    - Should any already exist in the chosen start date?
+    - Do we need to add any custom GWs?
+ - Are the base game governments sufficient? Or do you need modded governments?
+
+
+
+============
+Boring admin
+============
+
+ - Provinces:
+    - Fix the province map, so every province has a correct name
+    - Check if provinces need to be added/reshaped/removed
+
+ - Culture:
+    - Create a comprehensive list of all possible cultures
+    - Decide if there should be any cultural modifiers
+    - Write list of cultural retinues & modifiers
+    - Write list of cultural military buildings & modifiers
+
+ - Graphics: (AFTER list of cultures)
+    - Assign existing animal culture portraits to relevant redwall cultures (cats? hedgehogs?)
+    - Optional for alpha release: Create new animal culture portrait packs for every other culture
+    - Add generic coats of arms for dynasties / titles, depending on culture
+    - Add special coats of arms for some dynasties / titles
+
+ - Religion: (AFTER deciding on an approach to religion - above)
+    - Write a list of all religions
+    - Add a list of religious features to each religion
+
+ - History: (AFTER provinces, and AFTER deciding on a start date)
+    - Add a starting ruler for each province
+
+ - Bloodlines: (AFTER deciding on a start date)
+    - Which bloodlines should exist?
+    - What should their properties be?
+
+ - Artifacts:
+    - Create a list of legendary/religious artifacts, and their properties.
+
+ - Offmap:
+    - For alpha release, disable all offmap powers

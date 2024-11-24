@@ -1,1 +1,1 @@
-A CK2 mod based on the Redwall Book series.
+A Crusader Kings 2 mod based on the Redwall Book series.
